@@ -51,7 +51,7 @@ public void testCreatePost() {
         .then()
             .extract().response();
 
-    // Status code 201 (Created) olmalı
+    // Status code 201 olmalıııı
     assertEquals(201, response.statusCode());
 
     // Cevap içeriğinde gönderdiğimiz veriler var mı kontrol edelim
@@ -63,7 +63,7 @@ public void testCreatePost() {
     assertEquals("bar", body);
     assertEquals(1, userId);
 
-    // Performans: 1 saniyeden kısa sürede dönmeli
+    //1 saniyeden kısa sürede dönmeli
     assertTrue(response.getTime() < 1000);
 } 
 

@@ -27,7 +27,7 @@
         <scope>test</scope>
     </dependency>
 
-    <!-- JSON işlemleri için (isteğe bağlı ama bazı testlerde işe yarayabilir) -->
+    <!-- JSON işlemleri için (isteğe bağlı/ bazı testlerde işe yarayabilir) -->
     <dependency>
         <groupId>org.json</groupId>
         <artifactId>json</artifactId>
