@@ -1,33 +1,43 @@
 # RestAssured API Test Projesi
 
-Bu proje, Rest Assured kütüphanesi kullanılarak hazırlanmış örnek API testlerini içerir.  
-JUnit4 framework ile Maven projesi olarak yapılandırılmıştır.
+Bu proje, **Rest Assured** kütüphanesi kullanılarak hazırlanmış gelişmiş API testlerini içerir.
+Proje, **JUnit4** test framework'ü ile **Maven** tabanlı olarak yapılandırılmıştır.
 
-## Testler
+## Test Sınıfı
 
-- GET isteği ile kullanıcı bilgisi sorgulama testi  
-- POST isteği ile yeni gönderi oluşturma testi
+* `AlternativeApiTests.java`: GET ve POST istekleri için geliştirilmiş test senaryoları içerir.
+
+## Test Senaryoları
+
+* ✅ **GET Kullanıcı Bilgisi Sorgulama:**
+
+  * HTTP 200 durum kodu kontrolü
+  * JSON içerik doğrulaması (username, name, city)
+  * Header ve performans doğrulaması
+
+* ✅ **POST Yeni Gönderi Oluşturma:**
+
+  * HTTP 201 durum kodu kontrolü
+  * Body verisi doğrulaması
+  * Yeni ID üretimi kontrolü
+  * Header ve süre kontrolü
 
 ## Test Edilen API URL'leri
 
-- **GET Kullanıcı Bilgisi:**  
+* **GET:**
   `https://jsonplaceholder.typicode.com/users/1`
 
-- **POST Yeni Gönderi Oluşturma:**  
+* **POST:**
   `https://jsonplaceholder.typicode.com/posts`
 
 ## Kullanılan Teknolojiler
 
-- Java 8  
-- Maven  
-- Rest Assured 5.3.0  
-- JUnit 4.13.2
+* Java 8
+* Maven
+* Rest Assured 5.3.0
+* JUnit 4.13.2
 
-## Çalıştırma
+## Projeyi Çalıştırma
 
-Projeyi Eclipse veya başka bir IDE ile açabilirsiniz.  
-Test sınıfı `ApiTests` içinde test metotları bulunmaktadır.  
-Testleri çalıştırmak için:
-
-```bash
-mvn test
+1. Projeyi Eclipse veya IntelliJ gibi bir IDE ile açın.
+2. `src/test/java/com/test/api/AlternativeApiTests.java` içindeki testleri çalıştırın.
